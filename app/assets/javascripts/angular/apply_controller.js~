@@ -1,0 +1,3 @@
+angular.module('angularApp').controller('applyCtr', ['$scope', '$http', '$resource', '$location', 'Login', function($scope, $http, $resource, $location, Login){
+	
+}]);

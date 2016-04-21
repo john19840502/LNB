@@ -1,0 +1,128 @@
+<header id="header" class="show-on-scroll" data-offset-el=".index-section" data-offset-behavior="bottom" role="banner">
+        <div class="header-inner" id="yui_3_17_2_62_1461022048731_1821">
+          <div id="siteTitleWrapper" class="wrapper sqs-frontend-overlay-editor-widget-host" data-content-field="site-title">
+            
+              <h1 id="siteTitle" class="site-title"><a href="/">LnB</a></h1>
+            
+          </div><!-- comment the linebreak between these two elements because science
+          --><label for="mobileNavToggle" class="mobile-nav-toggle-label"><div class="top-bar"></div><div class="middle-bar"></div><div class="bottom-bar"></div></label><label for="mobileNavToggle" class="mobile-nav-toggle-label fixed-nav-toggle-label"><div class="top-bar"></div><div class="middle-bar"></div><div class="bottom-bar"></div></label><!-- comment the linebreak between these two elements because science
+          --><div id="headerNav"><div id="mainNavWrapper" class="nav-wrapper" data-content-field="navigation-mainNav">
+  <nav id="mainNavigation" data-content-field="navigation-mainNav" class="sqs-frontend-overlay-editor-widget-host">
+    
+      
+        
+
+        
+
+          
+          <div class="collection homepage">
+            <a href="#/welcome">
+              Welcome
+            </a>
+          </div>
+          
+
+        
+      
+      
+
+    
+      
+        
+
+        
+
+          
+          <div class="collection">
+            <a href="#/why_lnb">
+              Why LnB
+            </a>
+          </div>
+          
+
+        
+      
+      
+
+    
+      
+        
+
+        
+
+          
+          <div class="collection">
+            <a href="#/how_lnb">
+              HOW LnB WORKS
+            </a>
+          </div>
+          
+
+        
+      
+      
+
+    
+      
+        
+
+        
+
+          
+          <div class="collection active">
+            <a href="#/apply">
+              Apply
+            </a>
+          </div>
+          
+
+        
+      
+      
+
+    
+      
+        
+
+        
+
+          
+          <div class="collection">
+            <a href="#/about_lnb">
+              About LnB
+            </a>
+          </div>
+          
+
+        
+      
+      
+
+    
+      
+        
+
+        
+
+          
+          <div class="collection">
+            <a href="{{currentLogin}}">
+              {{logStatus}}
+            </a>
+          </div>
+          
+
+        
+      
+      
+
+    
+  </nav>
+</div>
+<!-- style below blocks out the mobile nav toggle only when nav is loaded -->
+<style>.mobile-nav-toggle-label { display: inline-block !important; }</style>
+
+
+</div>
+        </div>
+      </header>

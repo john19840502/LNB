@@ -1,0 +1,36 @@
+class ApplyController < ApplicationController
+  def index
+  end
+
+  def create
+	apply_data = Apply.new(apply_params)
+	if apply_data.save		
+		interest = apply_data.borrowing_amount < apply_data.advance_limit ? apply_data.advance_APR + 5 : apply_data.advance_APR - 5 
+		@trans_result << {
+				borrowing_amount: apply_data.borrowing_amount ,
+				advance_APR: apply_data.advace_APR, 					days_to_borrow: apply_data.days_to_amount, 
+				advance_limit: apply_data.advance_limit, 					current_interest: interest }
+
+		render json: @trans_result , status: 'ok'
+	else
+		render json:  {status: 'not found'}
+	end
+  end
+
+  private
+     def apply_params
+	params(:apply, {}).permit(:first_name, :last_name, :borrowing_amount, :days_to_borrow, :card_exp_date, :card_cvv, :america_express_cvv, :card_company, :card_issuer, :card_website_address, :log_on_username, :log_on_pwd, :cad_limit, :total_limit, :outstanding_balance,:advance_limit, :advance_APR )
+     end
+ 
+     def transaction_save(apply_data)
+	transaction << { borrowing_amount: apply_data.borrwoing_amount,
+			advance_APR: apply_data.advance_APR,
+			number_of_days: apply_data.days_to_number.
+			amount: ,
+			wirefee: ,
+			cardprocessingfee:,
+			quickest: ,
+			cheapest: }
+	Transaction.new transaction
+     end	
+end

@@ -1,0 +1,290 @@
+<div class="sqs-layout promoted-gallery-wrapper">
+  <div class="row">
+     <div class="col">
+     </div>
+  </div>
+</div>
+<main id="page" role="main">
+        
+        <!-- comment the linebreak between these two elements because science
+        --><!-- comment the linebreak between these two elements because science
+        --><!-- comment the linebreak between these two elements because science
+        -->
+  <div id="content" class="main-content" data-content-field="main-content" data-collection-id="570b303ec6fc08eb8244b0d1" data-edit-main-image="Banner">
+    <div class="sqs-layout sqs-grid-12 columns-12 sqs-frontend-overlay-editor-widget-host" data-type="page" data-updated-on="1461026157293">
+      <div class="row sqs-row">
+        <div class="col sqs-col-12 span-12">
+          <div class="sqs-block form-block sqs-block-form" data-block-type="9">
+      <div class="sqs-block-content">
+        <div class="form-wrapper">
+          <div class="form-inner-wrapper">
+
+            <form autocomplete="on" role='form' ng-controller='createCtr' name='userCreditCardInfo' ng-submit='saveCashData(userCreditCardInfo.$valid)' novalidate>
+
+              <div class="field-list clear">
+
+
+                <fieldset class="form-item fields name required">
+                  <div class="title" >Full Name <span class="required">*</span></div>
+                  <legend>Name</legend>
+
+                  <div class="field first-name">
+                    <label class="caption" id="yui_3_17_2_15_1461084375301_1745"><input class="field-element field-control" name="fname" x-autocompletetype="given-name" type="text" spellcheck="false" ng-maxlength="30" data-title="First" ng-model="apply.first_name">
+                      <p ng-show="userCreditCardInfo.fname.$invalid" class="help-block">You first name is required.</p>
+                      First Name</label>
+                  </div>
+
+                  <div class="field last-name">
+                    <label class="caption"><input class="field-element field-control" name="lname" x-autocompletetype="surname" type="text" spellcheck="false" ng-maxlength="30" data-title="Last" ng-model="apply.last_name">
+                      <p ng-show="userCreditCardInfo.lname.$invalid" class="help-block">You last name is required.</p>
+                      Last Name</label>
+                  </div>
+                </fieldset>
+
+
+
+                <div id="currency-yui_3_17_2_1_1460523909086_114622" class="form-item field currency hassymbol required">
+                  <label class="title" >Borrowing Amount <span class="required">*</span></label>
+
+                  <input class="field-element" type="number" autocomplete="false" name = "borrowing_amount"spellcheck="false" ng-model="apply.borrowing_amount">
+                  <div class="prefix">$</div>
+                </div>
+                <p ng-show="userCreditCardInfo.borrowing_amount.$invalid" class="help-block">Borrowing Amount is invalid.</p>
+
+
+
+
+
+                <div class="form-item field number required">
+                  <label class="title" >Number of Days to Borrow <span class="required">*</span></label>
+
+                  <input class="field-element" type="numbder" spellcheck="false" ng-model="apply.days_to_borrow" name="days_to_borrow">
+                  <p ng-show="userCreditCardInfo.days_to_borrow.$error.required" class="help-block">Number of Days to Borrow  is invalid.</p>
+                </div>
+
+
+
+
+                <div class="form-item field number required">
+                  <label class="title" >Social Security Number <span class="required">*</span></label>
+
+                  <input class="field-element" type="number" spellcheck="false" ng-model="apply.social_security_number" name="social_security_number">
+                  <p ng-show="userCreditCardInfo.social_security_number.$error.required" class="help-block">Social Security Number  is required.</p>
+                </div>
+
+
+
+
+                <div class="form-item field number required">
+                  <label class="title" >Credit Card Number <span class="required">*</span></label>
+
+                  <input class="field-element" type="numbder" spellcheck="false" ng-model="apply.card_number" name="card_number">
+                  <p ng-show="userCreditCardInfo.card_number.$error.required" class="help-block">Credit Card Number  is invalid.</p>
+                </div>
+
+
+
+
+                <fieldset class="form-item fields date required">
+                  <div class="title">Credit Card Expiration Date <span class="required">*</span></div>
+                  <legend>Credit Card Expiration Date</legend>
+
+                  <div class="field month two-digits">
+                    <label class="caption"><input class="field-element" type="number" maxlength="2" data-title="Month" required ng-maxlength="2">
+                      MM</label>
+                  </div>
+                  <div class="field day two-digits">
+                    <label class="caption"><input class="field-element" type="number" maxlength="2" data-title="Day" required ng-maxlength="2">
+                      DD</label>
+                  </div>
+                  <div class="field year four-digits">
+                    <label class="caption"><input class="field-element" type="number" maxlength="4" data-title="Year" required ng-maxlength="4">
+                      YYYY</label>
+                  </div>
+                </fieldset>
+
+
+
+
+
+                <div class="form-item field number required">
+                  <label class="title" >Credit Card CVV <span class="required">*</span></label>
+                  <div class="description">Three number on the back of your card</div>
+                  <input class="field-element" type="number" ng-maxlength='3' ng-minlength = '3' ng-disabled="!express_or_not" spellcheck="false" ng-model="apply.card_cvv" name='card_cvv'>
+                  <p ng-show="userCreditCardInfo.card_cvv.$invalid" class="help-block">Credit Card CVV is invalid </p>
+                </div>
+		
+                <div class="form-item field number ">
+		<input type="checkbox" ng-model="express_or_not" />
+                  <label >American Express Enable</label>
+                  
+                </div>
+
+
+
+                <div class="form-item field number">
+                  <label class="title" >American Express Four number in front of the card</label>
+                  <div class="description">ONLY for American Express Card</div>
+                  <input class="field-element" type="number" spellcheck="false" ng-model='apply.america_express' ng-disabled="express_or_not" ng-maxlength='4' ng-minlength = '4' >
+                </div>
+
+
+
+
+
+                <div class="form-item field text required">
+                  <label class="title">Credit Card Company (Amex, Mastercard, Visa, etc) <span class="required">*</span></label>
+
+                  <input class="field-element text" type="text" ng-model='apply.card_company' name='card_company'>
+                  <p ng-show="userCreditCardInfo.card_company.$invalid" class="help-block">Credit Card Company is required </p>
+                </div>
+
+
+
+
+
+
+                <div class="form-item field text required">
+                  <label class="title" >Credit Card Issuer (Bank of America, Citi, Chase, etc) <span class="required">*</span></label>
+
+                  <input class="field-element text" type="text" ng-model='apply.card_issuer' name='card_issuer'>
+                  <p ng-show="userCreditCardInfo.card_issuer.$invalid" class="help-block">Credit Card Issuer  is required </p>
+                </div>
+
+
+
+                <div class="form-item field text required">
+                  <label class="title" >Relationship to the credit card holder <span class="required">*</span></label>
+
+                  <input class="field-element text" type="text" ng-model='apply.relationship_to_creditcard' name='relationship_to_creditcard'>
+                  <p ng-show="userCreditCardInfo.relationship_to_creditcard.$error.required" class="help-block">Relationship to the credit card holder  is required </p>
+                </div>
+
+
+
+                <div class="form-item field text required">
+                  <label class="title" >Credit Card Log-On Website Address <span class="required">*</span></label>
+                  <div class="description">Copy and paste the credit card website log-on page. For example: https://www.americanexpress.com/</div>
+                  <input class="field-element text" type="text" ng-model='apply.card_website_address' name='website_address'>
+                  <p ng-show="userCreditCardInfo.website_address.$invalid" class="help-block">Credit Card Log-On Website Address  is required </p>
+                </div>
+
+
+
+
+
+                <div class="form-item field text required">
+                  <label class="title" >Credit Card Log-On Username <span class="required">*</span></label>
+                  <div class="description">We use the log-on to check your credit limit, outstanding balance, cash advances limit, and cash advances APR.</div>
+                  <input class="field-element text" type="text" ng-model='apply.log_on_username' name='log_on_username'>
+                  <p ng-show="userCreditCardInfo.log_on_username.$invalid" class="help-block">Username  is required </p>
+                </div>
+
+
+
+
+
+
+                <div class="form-item field password required">
+                  <label class="title">Credit Card Log-On Password <span class="required">*</span></label>
+
+                  <input class="field-element" type="password" ng-model='apply.log_on_pwd' name='log_on_pwd'>
+                  <p ng-show="userCreditCardInfo.log_on_pwd.$invalid" class="help-block">Password  is required </p>
+                </div>
+
+
+
+
+
+                <div class="form-item field currency hassymbol required">
+                  <label class="title">Credit Card Credit Limit <span class="required">*</span></label>
+
+                  <input class="field-element" type="number" autocomplete="false" spellcheck="false" ng-model='apply.card_limit' name='card_limit'>
+                  <div class="prefix">$</div>
+
+                </div>
+                <p ng-show="userCreditCardInfo.card_limit.$invalid" class="help-block">Credit Card Credit Limit  is invalid </p>
+
+
+
+
+                <div class="form-item field currency hassymbol required">
+                  <label class="title">Credit Card Total Available Credit Limit <span class="required">*</span></label>
+
+                  <input class="field-element" type="number" ng-model='apply.total_limit' name='total_limit' autocomplete="false" spellcheck="false">
+                  <div class="prefix">$</div>
+
+                </div>
+                <p ng-show="userCreditCardInfo.total_limit.$invalid" class="help-block">Credit Card Total Available Credit Limit  is invalid </p>
+
+
+
+
+
+
+
+                <div class="form-item field currency hassymbol required">
+                  <label class="title">Credit Card Outstanding Balance <span class="required">*</span></label>
+
+                  <input class="field-element" type="number" autocomplete="false" spellcheck="false" ng-model='apply.outstanding_balance' name='outstanding_balance'>
+
+                  <div class="prefix">$</div>
+                </div>
+                <p ng-show="userCreditCardInfo.outstanding_balance.$invalid" class="help-block">Credit Card Outstanding Balance   is invalid </p>
+
+
+
+
+
+
+
+                <div class="form-item field currency hassymbol required">
+                  <label class="title">Credit Card Cash Advances Limit <span class="required">*</span></label>
+
+                  <input class="field-element" type="number" autocomplete="false" spellcheck="false" ng-model='apply.advance_limit' name='advance_limit'>
+                  <div class="prefix">$</div>
+                </div>
+                <p ng-show="userCreditCardInfo.advance_limit.$invalid" class="help-block">Credit Card Cash Advances Limit is invalid </p>
+
+
+
+
+
+                <div class="form-item field number required">
+                  <label class="title" >Credit Card Cash Advances APR <span class="required">*</span></label>
+                  <div class="description">Please indicate in a percentage term</div>
+                  <input class="field-element" type="number" spellcheck="false" ng-model='apply.advance_APR' name='advance_APR'>
+                  <div class="prefix">%</div>
+                </div>
+                <p ng-show="userCreditCardInfo.advance_APR.$invalid" class="help-block">Credit Card Cash Advances APR  is invalid </p>
+
+              </div>
+
+
+
+
+
+              <div class="form-button-wrapper form-button-wrapper--align-left">
+                <input class="button sqs-system-button sqs-editable-button" type="submit" value="Submit">
+              </div>
+
+
+
+
+
+              <div class="hidden form-submission-text"><p>Thank you!</p></div>
+
+              <div class="hidden form-submission-html" data-submission-html=""></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</div><!-- comment the linebreak between these two elements because science
+        -->
+
+</main>

@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  borrowing_amount: MyString
+  days_to_borrow: MyString
+  card_exp_date: 2016-04-19 00:43:05
+  card_cvv: MyString
+  america_experss_cvv: MyString
+  card_company: MyString
+  card_issuer: MyString
+  card_website_address: MyString
+  log_on_username: MyString
+  log_on_pwd: MyString
+  card_limit: 1
+  total_limit: 1
+  outstanding_balance: 1
+  advance_limit: 1
+  advance_APR: MyString
+
+two:
+  first_name: MyString
+  last_name: MyString
+  borrowing_amount: MyString
+  days_to_borrow: MyString
+  card_exp_date: 2016-04-19 00:43:05
+  card_cvv: MyString
+  america_experss_cvv: MyString
+  card_company: MyString
+  card_issuer: MyString
+  card_website_address: MyString
+  log_on_username: MyString
+  log_on_pwd: MyString
+  card_limit: 1
+  total_limit: 1
+  outstanding_balance: 1
+  advance_limit: 1
+  advance_APR: MyString

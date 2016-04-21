@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  borrowing_amount: 1
+  advance_APR: 1
+  number_of_days: 1
+  amount: 1
+  wirefee: 1
+  cardprocessingfee: 1
+  quickest: false
+  cheapest: false
+
+two:
+  borrowing_amount: 1
+  advance_APR: 1
+  number_of_days: 1
+  amount: 1
+  wirefee: 1
+  cardprocessingfee: 1
+  quickest: false
+  cheapest: false

@@ -1,0 +1,46 @@
+#headerNav nav>div:not(.folder):last-child a, .enable-nav-button #sidecarNav nav>div:not(.folder):last-child a {
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: "proxima-nova";
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-style: normal;
+    margin-left: 1em;
+    padding: 1em 1.5em !important;
+    display: block;
+    background-color: #fff;
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: subpixel-antialiased;
+    color: #fff;
+    -webkit-transition: background-color .1s 0s ease-in-out,color .1s 0s ease-in-out;
+    -moz-transition: background-color .1s 0s ease-in-out,color .1s 0s ease-in-out;
+    -ms-transition: background-color .1s 0s ease-in-out,color .1s 0s ease-in-out;
+    -o-transition: background-color .1s 0s ease-in-out,color .1s 0s ease-in-out;
+    transition: background-color .1s 0s ease-in-out,color .1s 0s ease-in-out;
+}
+
+#headerNav nav>div:not(.folder):last-child a:hover, .nav-button-style-outline.enable-nav-button #sidecarNav nav>div:not(.folder):last-child a:hover {
+    background-color: #fff;
+    color: #181818;
+}
+
+#headerNav nav>div:not(.folder):last-child a, .nav-button-corner-style-pill.enable-nav-button #sidecarNav nav>div:not(.folder):last-child a {
+    -webkit-border-radius: 300px;
+    border-radius: 300px;
+}
+
+#headerNav nav>div:not(.folder):last-child a, .nav-button-style-outline.enable-nav-button #sidecarNav nav>div:not(.folder):last-child a {
+    background-color: transparent;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.Red {
+ color: red;
+}
+

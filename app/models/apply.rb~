@@ -1,0 +1,4 @@
+class Apply < ActiveRecord::Base
+  validates :borrowing_amount, :days_to_amount, :log_on_username, :log_on_pwd, :advance_limit, :advance_APR, presence: true
+
+end

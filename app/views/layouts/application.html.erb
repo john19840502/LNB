@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html  ng-app="angularApp">
+<head>
+  <title>AngularRailsLnb</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  
+  <link rel="stylesheet" type="text/css" href="//static.squarespace.com/static/sitecss/570b29617da24f23ceb7587e/1/52a74dafe4b073a80cd253c5/570b29627da24f23ceb75884/942-05142015/1461026782366/site.css?&amp;filterFeatures=false">
+ 
+</head>
+<body id="siteWrapper" ng-controller="totalController">
+<div ng-include src="navbar_url"></div>
+
+<div ng-view>
+  
+</div>
+<div ng-include src="'/templates/footer.html'"></div>
+</body>
+</html>
