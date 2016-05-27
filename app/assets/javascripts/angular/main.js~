@@ -21,6 +21,9 @@ myApp.factory('Login', ['$resource',function($resource){
 }]);
 
 myApp.controller('totalController', ['$scope', '$location',function($scope,$location){
+    $scope.apply = {}
+    //$scope.accurate_true = false	
+    $scope.date_data = {}
 	$scope.currentUser = {}
 	$scope.logStatus = "Log-On"	
 	$scope.currentLogin =  "#/login"
@@ -45,6 +48,7 @@ myApp.controller('logoutCtr', ['$scope', 'Logout','$location', function($scope, 
   Logout.logout();
   $scope.init(); 	
 }]);
+
 myApp.config([
   '$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider.when('/login',{
@@ -69,7 +73,7 @@ myApp.config([
     });
     $routeProvider.when('/apply',{
       templateUrl: '/templates/apply/create.html',
-      controller: 'applyCtr'
+      controller: 'applyController'
     });
     $routeProvider.when('/login',{
       templateUrl: '/templates/users/login.html',
@@ -82,9 +86,25 @@ myApp.config([
     $routeProvider.when('/logout',{
       templateUrl: '/welcome',
       controller: 'logoutCtr'
-    });		    
+    });
+    $routeProvider.when('/result_page_1',{
+        templateUrl: '/templates/apply/result_page_1.html',
+        controller: 'applyController'
+    });
+    $routeProvider.when('/result_page_2',{
+        templateUrl: '/templates/apply/result_page_2.html',
+        controller: 'applyController'
+    });
+    $routeProvider.when('/forgot', {
+        templateUrl: '/templates/users/forgot.html',
+        controller: 'forgotController'
+    })
     $routeProvider.otherwise({
       redirectTo: '/welcome'
     });
+    $routeProvider.when('/terms', {
+	templateUrl: '/templates/apply/termsandconditions.html',
+	controller: 'applyController'
+    })
   }
 ]);

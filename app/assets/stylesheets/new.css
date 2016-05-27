@@ -44,3 +44,98 @@
  color: red;
 }
 
+.header-inner{
+ padding: 10px 0;
+}
+
+.logo img {
+width: 50% \9; /*Force IE10 and below to size SVG images correctly*/
+max-width: 50% !important;
+height: 1.8em;
+}
+.logotext{
+    font-size:80%; color: white;
+}
+ul {
+ width: 100%;
+}
+
+@media (max-width:480px) { 
+.logo img {
+    width: 50% \9; /*Force IE10 and below to size SVG images correctly*/
+    max-width:50% !important;
+}
+}
+
+@media (max-width:400px) { 
+.logo img {
+    width: 45% \9; /*Force IE10 and below to size SVG images correctly*/
+    max-width: 45%;
+}
+}
+
+@media (max-width:385px) { 
+.logo img {
+    width: 40% \9; /*Force IE10 and below to size SVG images correctly*/
+    max-width: 40%;
+}
+}
+
+@media (max-width:345px) { 
+.logo img {
+    width: 35% \9; /*Force IE10 and below to size SVG images correctly*/
+    max-width: 35%;
+}
+.logotext{
+    font-size:80%; color: white;
+}
+}
+
+@media (max-width:335px) { 
+.logo img {
+    width: 30% \9; /*Force IE10 and below to size SVG images correctly*/
+    max-width: 30%;
+}
+.logotext{
+    font-size:80%; color: white;
+}
+}
+
+@media (max-width:325px) { 
+.logo img {
+    width: 25% \9; /*Force IE10 and below to size SVG images correctly*/
+    max-width: 25%;
+}
+.logotext{
+    font-size:80%; color: white;
+}
+}
+
+@media (max-width:315px) { 
+.logo img {
+    width: 25% \9; /*Force IE10 and below to size SVG images correctly*/
+    max-width: 25% !important;
+    height: 10%;
+}
+.logotext{
+    font-size:60%; color: white;
+}
+
+ul{
+width: 70%;
+}
+
+.responsiveP{
+display: none;
+}
+
+}
+
+
+li {
+margin: 0;
+list-style: none;
+text-align: left; 
+}
+li:before { content: "\2713\a0" }
+

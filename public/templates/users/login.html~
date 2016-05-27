@@ -62,13 +62,18 @@
 </div>
 </div></div>
 
-<div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-05f57c6ff3cf5ea036de"><div class="sqs-block-content"><p>Create Username and Password?&nbsp;&nbsp;</p></div></div>
+<div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-05f57c6ff3cf5ea036de"><div class="sqs-block-content"><p>Forgot my password?&nbsp;&nbsp;</p></div></div>
 
 <div class="sqs-block button-block sqs-block-button" data-block-type="53" id="block-yui_3_17_2_31_1460523909086_5616"><div class="sqs-block-content">
 <div class="sqs-block-button-container--left">
-	<a href="#/create" class="sqs-block-button-element--small sqs-block-button-element">Click here</a>
+	<a href="#/forgot" class="sqs-block-button-element--small sqs-block-button-element">Click here</a>
 </div></div></div>
+<div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-05f57c6ff3cf5ea036de"><div class="sqs-block-content"><p>Create Username and Password?&nbsp;&nbsp;</p></div></div>
 
+                <div class="sqs-block button-block sqs-block-button" data-block-type="53" id="block-yui_3_17_2_31_1460523909086_5616"><div class="sqs-block-content">
+                    <div class="sqs-block-button-container--left">
+                        <a href="#/create" class="sqs-block-button-element--small sqs-block-button-element" >Sign Up</a>
+                    </div>
 </div>
 </div>
 </div>

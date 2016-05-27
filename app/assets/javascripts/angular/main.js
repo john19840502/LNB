@@ -22,6 +22,8 @@ myApp.factory('Login', ['$resource',function($resource){
 
 myApp.controller('totalController', ['$scope', '$location',function($scope,$location){
     $scope.apply = {}
+    $scope.user = {}
+    //$scope.accurate_true = false	
     $scope.date_data = {}
 	$scope.currentUser = {}
 	$scope.logStatus = "Log-On"	
@@ -101,5 +103,9 @@ myApp.config([
     $routeProvider.otherwise({
       redirectTo: '/welcome'
     });
+    $routeProvider.when('/terms', {
+	templateUrl: '/templates/apply/termsandconditions.html',
+	controller: 'applyController'
+    })
   }
 ]);

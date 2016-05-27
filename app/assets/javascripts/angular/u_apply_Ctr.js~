@@ -1,15 +1,12 @@
 /**
  * Created by root on 4/21/16.
  */
-
-angular.module('angularApp')
-
-    .controller('applyController', ['$scope', '$resource', '$location', 'Apply', function($scope, $resource, $location, Apply,$rootscope){
+angular.module('angularApp').controller('applyController', ['$scope', '$resource', '$location', 'Apply', function($scope, $resource, $location, Apply,$rootscope){
 
     $scope.message =""
     $scope.message_show = false
    
-    $scope.message_result_1_less = "Congratulations. You have been approved to borrow your requested amount of $" + $scope.apply.borrowing_amount + " at " + ($scope.apply.advance_APR - 5) + "% APR, which is 5% lower than at the rate you can borrow from your credit card company.Moreover, your total approved borrowing amount from us is $"+ $scope.total_limit+" so you can borrow more if you would like to. Here is what we can offer. Any amount upto $"+$scope.apply.advance_limit+", we can lend it to you at "+ ($scope.apply.advance_APR - 5)+"% APR. For any amount between $"+$scope.apply.advance_limit+" and $"+$scope.apply.total_limit+", we can lend it to you at "+($scope.apply.advance_APR + 5)+"% APR."
+    $scope.message_result_1_less = "Congratulations.You have been approved to borrow your requested amount of $" + $scope.apply.borrowing_amount + " at " + ($scope.apply.advance_APR - 5) + "% APR, which is 5% lower than at the rate you can borrow from your credit card company.Moreover, your total approved borrowing amount from us is $"+ $scope.total_limit+" so you can borrow more if you would like to. Here is what we can offer.Any amount upto $"+$scope.apply.advance_limit+", we can lend it to you at "+ ($scope.apply.advance_APR - 5)+"% APR. For any amount between $"+$scope.apply.advance_limit+" and $"+$scope.apply.total_limit+", we can lend it to you at "+($scope.apply.advance_APR + 5)+"% APR."
     $scope.message_result_1_higher = "Congratulations. You have been approved to borrow your requested amount of $" + $scope.apply.borrowing_amount + "at "+ ($scope.apply.advance_APR + 5) +"% APR, which is 5% higher because we are taking more risk as you borrow more but please give us some credit that we are providing you more capital which something your credit card is hesitant to do. Moreover, your total approved borrowing amount from us is $"+$scope.apply.total_limit+" so you can borrow more if you would like to but depending on your situation, we may provide different maximum amount you are approved to borrow from us when you submit another application in the future. (This would be the normal response with the "+($scope.apply.advance_APR + 5)+"% APR but since the customer lives in New York, the premium interst rate (APR) is "+($scope.apply.advance_APR - 5)+"%). "
 
     $scope.show_message_result = function(){
@@ -27,31 +24,18 @@ angular.module('angularApp')
 				{id: "Sister", name: "Sister"}];
 
     $scope.apply.relationship_to_creditcard = $scope.relationshipItems[0];
-       // $scope.accurate_true = true
-    $scope.guarantee = function(){
-        if (!$scope.accurate_true) {
-           //$scope.accurate_true = true
-            //accurate_true_check = true;
-          //  alert($scope.accurate_true)
-            $location.path("/terms")
-        }
+    $scope.guarantee = function(){	
+	if(!$scope.accurate_true)	
+	{	
+		$scope.accurate_true = true;
+		$location.path("/terms")		
+	}
     }
-    //alert($scope.accurate_true)
-    $scope.guarantee_confirm = function(){
-       // alert($scope.accurate_true)
-        $scope.accurate_true = true
-        $location.path("/apply")
-        jQuery("#accurate_true").hide()
-        console.log(jQuery("#accurate_true"))
-        $scope.accurate_true = true//accurate_true_check;
+    alert($scope.accurate_true)
+    $scope.guarantee_confirm = function(){	
+	$location.path("/apply")	
+	$scope.accurate_true = true;
     }
-
-    //if($scope.accurate_true)  delay();
-    //
-    //function delay(){
-    //    alert()
-    //    $scope.accurate_true = true
-    //}
 
     $scope.result_next_page = function(){
         $scope.apply.card_exp_date = $scope.date_data.year+"-"+$scope.date_data.month;
@@ -102,7 +86,3 @@ angular.module('angularApp').directive('dateFormat', function() {
         }
     };
 });
-
-function checked(){
-    jQuery("#accurate_true").checked()
-}

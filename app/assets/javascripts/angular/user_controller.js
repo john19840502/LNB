@@ -1,5 +1,5 @@
 angular.module('angularApp').controller('loginCtr', ['$scope', '$http', '$resource', '$location', 'Login', function($scope, $http, $resource, $location, Login){
-	$scope.user = {}
+	
 	
 	$scope.Login = function(isValid){
 		if (!isValid) return;
@@ -18,7 +18,7 @@ angular.module('angularApp').controller('loginCtr', ['$scope', '$http', '$resour
 
 
 angular.module('angularApp').controller('createCtr', ['$scope', '$http', '$resource', '$location', 'Create', function($scope, $http, $resource, $location, Create){       	
-        $scope.user = {};
+        
 
 	$scope.matchPassword = function(){
 		if($scope.user.password != $scope.user.password_confirm)

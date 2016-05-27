@@ -1,5 +1,5 @@
 angular.module('angularApp').controller('loginCtr', ['$scope', '$http', '$resource', '$location', 'Login', function($scope, $http, $resource, $location, Login){
-	$scope.user = {}
+	
 	
 	$scope.Login = function(isValid){
 		if (!isValid) return;

@@ -1,0 +1,240 @@
+ <form autocomplete="on" role='form' name='userCreditCardInfo' ng-submit='saveDataCreditCard(true)'>
+
+              <div class="field-list clear">
+
+                <p ng-show="message_show">{{message}}</p>
+                <fieldset class="form-item fields name required">
+                  <div class="title" >Full Name <span class="required">*</span></div>
+                  <legend>Name</legend>
+
+                  <div class="field first-name">
+                    <label class="caption">
+                      <input class="field-element field-control" name="fname" type="text" spellcheck="false" ng-maxlength="30" data-title="First" ng-model="apply.first_name"  required />
+
+                      First Name</label>
+                  </div>
+
+                  <div class="field last-name">
+                    <label class="caption">
+                      <input class="field-element field-control" name="lname" type="text" spellcheck="false" ng-maxlength="30" data-title="Last" ng-model="apply.last_name" required />
+
+                      Last Name</label>
+                  </div>
+                </fieldset>
+
+                <div id="currency-yui_3_17_2_1_1460523909086_114622" class="form-item field currency hassymbol required">
+                  <label class="title" >Borrowing Amount <span class="required">*</span></label>
+
+                  <input class="field-element" type="text"  required autocomplete="false" name="borrowing_amount" spellcheck="false" ng-model="apply.borrowing_amount">
+                  <div class="prefix">$</div>
+                </div>
+
+
+
+
+
+
+                <div class="form-item field number required">
+                  <label class="title" >Number of Days to Borrow <span class="required">*</span></label>
+
+                  <input class="field-element" type="numbder" required placeholder="days value must be at least minium 7" spellcheck="false" ng-model="apply.days_to_borrow" name="days_to_borrow">
+
+                </div>
+
+
+
+
+                <div class="form-item field number required">
+                  <label class="title" >Social Security Number <span class="required">*</span></label>
+
+                  <input class="field-element" type="string"  required placeholder="123-456-7890" spellcheck="false" ng-model="apply.social_security_number" name="social_security_number">
+
+                </div>
+
+
+
+
+                <div class="form-item field number required">
+                  <label class="title" >Credit Card Number <span class="required">*</span></label>
+
+                  <input class="field-element" type="text" required  placeholder="1234 1234 1234 1234" ng-model="apply.card_number" name="card_number">
+
+                </div>
+
+
+
+
+                <fieldset class="form-item fields date required">
+                  <div class="title">Credit Card Expiration Date <span class="required">*</span></div>
+                  <legend>Credit Card Expiration Date</legend>
+
+                  <div class="field month two-digits">
+                    <label class="caption"><input class="field-element" ng-model="date_data.month" required  type="text" maxlength="2" data-title="Month" required ng-maxlength="2">
+                      MM</label>
+                  </div>
+                  <div class="field year four-digits">
+                    <label class="caption"><input class="field-element" ng-model="date_data.year" required  type="text" maxlength="4" data-title="Year" required ng-maxlength="4" size="4">
+                      YYYY</label>
+                  </div>
+                </fieldset>
+
+
+
+
+
+                <div class="form-item field number required">
+                  <label class="title" >Credit Card CVV <span class="required">*</span></label>
+                  <div class="description">Three number on the back of your card</div>
+                  <input class="field-element" type="text" ng-maxlength='3' ng-minlength = '3' ng-disabled="express_or_not" spellcheck="false" ng-model="apply.card_cvv" name='card_cvv'>
+
+                </div>
+
+                <div class="form-item field number ">
+                  <input type="checkbox" ng-model="express_or_not" />
+                  <label >American Express Enable</label>
+                </div>
+
+
+
+                <div class="form-item field number">
+                  <label class="title" >American Express Four number in front of the card</label>
+                  <div class="description">ONLY for American Express Card</div>
+                  <input class="field-element" type="text" spellcheck="false" ng-model='apply.america_express' ng-disabled="!express_or_not" ng-maxlength='4' ng-minlength = '4' >
+                </div>
+
+
+
+
+
+                <div class="form-item field text required">
+                  <label class="title">Credit Card Company (Amex, Mastercard, Visa, etc) <span class="required">*</span></label>
+
+                  <input class="field-element text" type="text" required  ng-model='apply.card_company' name='card_company'>
+
+                </div>
+
+
+
+
+
+
+                <div class="form-item field text required">
+                  <label class="title" >Credit Card Issuer (Bank of America, Citi, Chase, etc) <span class="required">*</span></label>
+
+                  <input class="field-element text" type="text"  required ng-model='apply.card_issuer' name='card_issuer'>
+
+                </div>
+
+
+
+                <div class="form-item field text required">
+                  <label class="title" >Relationship to the credit card holder <span class="required">*</span></label>
+
+                  <select class="field-element text" required ng-model='apply.relationship_to_creditcard' name='relationship_to_creditcard' ng-options="item as item.name for item in relationshipItems track by item.id" />
+
+                </div>
+
+
+
+                <div class="form-item field text required">
+                  <label class="title" >Credit Card Log-On Website Address <span class="required">*</span></label>
+                  <div class="description">Copy and paste the credit card website log-on page. For example: https://www.americanexpress.com/</div>
+                  <input class="field-element text" type="text" ng-model='apply.card_website_address' name='website_address'>
+
+                </div>
+
+
+
+
+
+                <div class="form-item field text required">
+                  <label class="title" >Credit Card Log-On Username <span class="required">*</span></label>
+                  <div class="description">We use the log-on to check your credit limit, outstanding balance, cash advances limit, and cash advances APR.</div>
+                  <input class="field-element text" type="text" ng-model='apply.log_on_username' name='log_on_username'>
+
+                </div>
+
+
+
+
+
+
+                <div class="form-item field password required">
+                  <label class="title">Credit Card Log-On Password <span class="required">*</span></label>
+
+                  <input class="field-element" type="password" ng-model='apply.log_on_pwd' name='log_on_pwd'>
+
+                </div>
+
+
+
+
+
+                <div class="form-item field currency hassymbol required">
+                  <label class="title">Credit Card Credit Limit <span class="required">*</span></label>
+
+                  <input class="field-element" type="text"  required autocomplete="false" spellcheck="false" ng-model='apply.card_limit' name='card_limit'>
+                  <div class="prefix">$</div>
+
+                </div>
+
+
+
+
+
+
+                <div class="form-item field currency hassymbol required">
+                  <label class="title">Credit Card Outstanding Balance <span class="required">*</span></label>
+
+                  <input class="field-element" type="text" required autocomplete="false" spellcheck="false" ng-model='apply.outstanding_balance' name='outstanding_balance'>
+
+                  <div class="prefix">$</div>
+                </div>
+
+
+
+                <div class="form-item field currency hassymbol required">
+                  <label class="title">Credit Card Total Available Credit Limit <span class="required">*</span></label>
+
+                  <input class="field-element" type="text" ng-model='apply.total_limit' ng-bind="available_limit()" name='total_limit' autocomplete="false" spellcheck="false">
+                  <div class="prefix">$</div>
+
+                </div>
+
+
+
+
+                <div class="form-item field currency hassymbol required">
+                  <label class="title">Credit Card Cash Advances Limit <span class="required">*</span></label>
+
+                  <input class="field-element" type="text"  required autocomplete="false" spellcheck="false" ng-model='apply.advance_limit' name='advance_limit'>
+                  <div class="prefix">$</div>
+                </div>
+
+
+
+
+
+
+                <div class="form-item field number required">
+                  <label class="title" >Credit Card Cash Advances APR <span class="required">*</span></label>
+                  <div class="description">Please indicate in a percentage term</div>
+                  <input class="field-element" type="text" required spellcheck="false" ng-model='apply.advance_APR' name='advance_APR'>
+                  <div class="prefix">%</div>
+                </div>
+
+
+              </div>
+
+
+              <div class="form-item field number ">
+                <input type="checkbox" ng-model="accurate_true" ng-click="guarantee()"/>
+                <label>terms and conditions of LnB service</label>
+              </div>
+
+              <div class="form-button-wrapper form-button-wrapper--align-left">
+                <input class="button sqs-system-button sqs-editable-button" type="submit" value="Submit" ng-click="submitted=true">
+              </div>
+
+              </div>
+            </form>

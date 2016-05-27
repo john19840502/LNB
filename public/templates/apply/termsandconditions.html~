@@ -1,0 +1,48 @@
+<div id="promotedGalleryWrapper" class="sqs-layout promoted-gallery-wrapper">
+  <div class="row">
+     <div class="col">
+     </div>
+  </div>
+</div>
+
+<main id="page" role="main" controller="applyController">
+        
+        <div id="content" class="main-content" data-content-field="main-content" data-collection-id="570b3060c6fc08eb8244b18b" data-edit-main-image="Banner">
+         <div class="sqs-layout sqs-grid-12 columns-12 sqs-frontend-overlay-editor-widget-host" data-type="page" data-updated-on="1461031944075" id="page-570b3060c6fc08eb8244b18b">
+           <div class="row sqs-row" id="yui_3_17_2_63_1461022048731_460">
+                 <div class="col sqs-col-10 span-10" id="yui_3_17_2_63_1461022048731_459">
+                      <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-20d2d7d07ef691626788">
+                          <div class="sqs-block-content" id="yui_3_17_2_63_1461022048731_457">
+                               
+                               <h1 class="text-align-center">
+                                  Terms and Conditions Of Lnb Service
+                               </h1>
+                               <p>
+                                  1.	You as a potential borrower or borrower are providing true and accurate information related to you and/or your family member
+                               </p>
+				<p>
+                                  2.	In the case that you are providing false and inaccurate information, you will be liable for the damages and lawsuit
+                               </p>
+				<p>
+                                  3.	You as a potential borrower or borrower fully understand and acknowledge the service provided by LnB
+                               </p>
+				<p>
+                                  4.	If you as a potential borrower or borrower provide us your credit card log-on website address, credit card log-on website username, and credit card log-on website password, you are fully aware and are disclosed and agree that we will only use to check your account details 
+                               </p>
+				<p>
+				<input type="checkbox" ng-model="accurate_true"> I guarantee all the info</input>
+				<div class="form-button-wrapper form-button-wrapper--align-left">
+                <input class="button sqs-system-button sqs-editable-button" type="button" value="Guarantee" ng-click="guarantee_confirm()" ng-disabled="!accurate_true">
+              </div>
+				</p>
+                          </div>
+                      </div>                      
+               </div>
+          </div>
+       
+     </div>
+   </div>
+</div><!-- comment the linebreak between these two elements because science
+        -->
+        
+</main>
